@@ -1,0 +1,203 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    /* content: ""; */
+    background-image: url('./assets/retro-living-room-interior-design.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 900px;
+}
+    
+
+div{
+    display: block;
+}
+
+/* Navigation Bar */
+
+.logo{
+    position: absolute;
+    top: 10%;
+    left: 3%;
+}
+
+.list{
+    border-bottom: 2px solid white;
+    padding: 25px 0;
+    position: absolute;
+    right: 5%;
+    width: 70%;
+}
+
+.list ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-item{
+    list-style: none;
+    font-weight: bold;
+    font-size: large;
+}
+
+.fa-phone-volume{
+    transform: rotate(-45deg);
+}
+
+/* Main Body */
+
+.heading{
+    position: absolute;
+    left: 6%;
+    top: 35%;
+    width: 45%;
+}
+
+.heading h1{
+    font-size: 65px;
+}
+
+.button{
+    position: absolute;
+    left: 6%;
+    top: 65%;
+    padding: 5px 10px;
+    background-color: transparent;
+}
+
+button{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 16px 32px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 30px;
+}
+
+.puzzle-box{
+    width: 20%;
+    position: absolute;
+    right: 8%;
+    top: 27%;
+    padding: 22px;
+    background-color: #8080807e;
+}
+
+.puzzle-icon{
+    margin-bottom: 20px;
+    padding: 5px 29px;
+    background-color: white;
+    border-radius: 25px;
+    width: 90px;
+}
+
+.puzzle-icon img{
+    transform: rotate(-90deg);
+    height: 30px;
+
+}
+
+.puzzle-box p{
+    font-size: 20px;
+}
+
+
+.bulb-box{
+    width: 20%;
+    position: absolute;
+    right: 25%;
+    top: 70%;
+    padding: 22px;
+    background-color: #8080807e;
+}
+
+.bulb-icon{
+    margin-bottom: 20px;
+    padding: 5px 29px;
+    background-color: white;
+    border-radius: 25px;
+    width: 90px;
+}
+
+.bulb-icon img{
+    height: 30px;
+}
+
+.bulb-box p{
+    font-size: 20px;
+}
+
+
+/* Media Queries */
+
+ @media screen and (min-width: 320px) and (max-width: 480px) {
+    body{
+        background-image: none;
+        width: 100vw;
+        height: 55rem;
+    }
+
+    body::before{
+        content: "";
+        background-image: url('./assets/retro-living-room-interior-design.jpg');
+        background-size: center;
+        position: fixed;
+        width: 100vw;
+        height: 100%;
+        z-index: -1;
+        background-repeat: no-repeat;
+    }
+
+    .logo{
+        top: 2.5rem;
+        left: 2.5rem;
+    }
+
+    .list{
+        display: none;
+    }
+
+    .heading{
+        top: 6rem;
+        left: 2.5rem;
+        width: 100%;
+    }
+
+    .heading h1{
+        margin-top: 2rem;
+        font-size: 9vw;
+    }
+
+    .puzzle-box{
+        width: 75%;
+        right: 2rem;
+        top: 18rem;
+        left: 2.5rem;
+    }
+
+    .bulb-box{
+        width: 75%;
+        right: 2rem;
+        top: 30rem;
+        left: 2.5rem;
+    }
+
+    .button{
+        left: 7rem;
+        top: 45rem;
+    }
+    
+    button{
+        font-size: 16px;
+        padding: 12px 32px;
+    }
+ }
